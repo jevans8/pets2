@@ -12,14 +12,14 @@ $f3 = Base::instance();
 
 //Default route
 $f3->route('GET /', function(){
-    echo '<h1>My Pets</h1>';
-    echo '<a href="order">Order a Pet</a>';
+    //echo '<h1>My Pets</h1>';
+    //echo '<a href="order">Order a Pet</a>';
 
     //instantiate new template object
-    //$view = new Template();
+    $view = new Template();
 
     //display home page via render method
-    //echo $view->render('views/home.html');
+    echo $view->render('views/pet-home.html');
 
 });
 
